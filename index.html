@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Hover Buttons</title>
+    <style>
+        * {
+            padding: 0;
+
+            margin: 0;
+        }
+
+        .hover-buttons {
+            display: flex;
+            /* Display buttons horizontally */
+            flex-direction: column;
+            margin:34px 0 ;
+            /* Add space between buttons */
+            border-radius: 12px;
+
+        }
+
+        .hover-button {
+            width: 80px;
+            height: 70px;
+            text-align: center;
+            line-height: 50px;
+            margin:20px 0 ;
+            cursor: pointer;
+            transition: transform 0.35s ease-in-out;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .button-red {
+            background-color: #66545e;
+        }
+
+        .button-green {
+            background-color: #ffb3b3;
+        }
+
+        .button-blue {
+            background-color: #9799ba;
+        }
+
+        .button-yellow {
+            background-color: #f6e0b5;
+        }
+
+        .hover-button:hover {
+            transform: translateX(10px);
+            background-color: rgb(48, 48, 48);
+            color: #f6e0b5;
+        }
+        .button-green:hover{
+            transform: rotate(45deg);
+        }
+        .button-blue:hover{
+            transform:scale(0.5);
+        }
+        .button-yellow:hover{
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hoverable buttons </h2>
+    <div class="hover-buttons">
+        <div class="hover-button button-red"></div>
+        <div class="hover-button button-green"></div>
+        <div class="hover-button button-blue"></div>
+        <div class="hover-button button-yellow"></div>
+    </div>
+</body>
+
+</html>
